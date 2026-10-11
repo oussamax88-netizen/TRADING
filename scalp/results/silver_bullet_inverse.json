@@ -1,0 +1,608 @@
+{
+ "slug": "silver_bullet_inverse",
+ "variants_tested": 18,
+ "grid": {
+  "ACCEPT|trend=off|MID|2R": {
+   "NQ": {
+    "n": 679,
+    "pw": 4.34,
+    "IS": 1.151,
+    "OOS": 0.901,
+    "all": 1.022
+   },
+   "ES": {
+    "n": 691,
+    "pw": 4.42,
+    "IS": 1.072,
+    "OOS": 0.993,
+    "all": 1.032
+   }
+  },
+  "ACCEPT|trend=off|MID|close": {
+   "NQ": {
+    "n": 679,
+    "pw": 4.34,
+    "IS": 1.185,
+    "OOS": 0.893,
+    "all": 1.041
+   },
+   "ES": {
+    "n": 691,
+    "pw": 4.42,
+    "IS": 1.173,
+    "OOS": 1.006,
+    "all": 1.091
+   }
+  },
+  "ACCEPT|trend=off|FIX|2R": {
+   "NQ": {
+    "n": 679,
+    "pw": 4.34,
+    "IS": 1.109,
+    "OOS": 0.82,
+    "all": 0.957
+   },
+   "ES": {
+    "n": 691,
+    "pw": 4.42,
+    "IS": 1.133,
+    "OOS": 0.959,
+    "all": 1.044
+   }
+  },
+  "ACCEPT|trend=off|FIX|close": {
+   "NQ": {
+    "n": 679,
+    "pw": 4.34,
+    "IS": 1.234,
+    "OOS": 0.948,
+    "all": 1.091
+   },
+   "ES": {
+    "n": 691,
+    "pw": 4.42,
+    "IS": 1.148,
+    "OOS": 0.922,
+    "all": 1.035
+   }
+  },
+  "ACCEPT|trend=on|MID|2R": {
+   "NQ": {
+    "n": 352,
+    "pw": 2.25,
+    "IS": 1.184,
+    "OOS": 1.039,
+    "all": 1.111
+   },
+   "ES": {
+    "n": 355,
+    "pw": 2.27,
+    "IS": 1.21,
+    "OOS": 0.832,
+    "all": 1.023
+   }
+  },
+  "ACCEPT|trend=on|MID|close": {
+   "NQ": {
+    "n": 352,
+    "pw": 2.25,
+    "IS": 1.342,
+    "OOS": 1.043,
+    "all": 1.195
+   },
+   "ES": {
+    "n": 355,
+    "pw": 2.27,
+    "IS": 1.349,
+    "OOS": 0.891,
+    "all": 1.131
+   }
+  },
+  "ACCEPT|trend=on|FIX|2R": {
+   "NQ": {
+    "n": 352,
+    "pw": 2.25,
+    "IS": 1.196,
+    "OOS": 0.885,
+    "all": 1.033
+   },
+   "ES": {
+    "n": 355,
+    "pw": 2.27,
+    "IS": 1.15,
+    "OOS": 0.888,
+    "all": 1.022
+   }
+  },
+  "ACCEPT|trend=on|FIX|close": {
+   "NQ": {
+    "n": 352,
+    "pw": 2.25,
+    "IS": 1.332,
+    "OOS": 0.944,
+    "all": 1.137
+   },
+   "ES": {
+    "n": 355,
+    "pw": 2.27,
+    "IS": 1.18,
+    "OOS": 0.785,
+    "all": 0.995
+   }
+  },
+  "FTF|trend=off|MID|2R": {
+   "NQ": {
+    "n": 399,
+    "pw": 2.55,
+    "IS": 1.296,
+    "OOS": 0.892,
+    "all": 1.078
+   },
+   "ES": {
+    "n": 415,
+    "pw": 2.65,
+    "IS": 1.145,
+    "OOS": 1.164,
+    "all": 1.154
+   }
+  },
+  "FTF|trend=off|MID|close": {
+   "NQ": {
+    "n": 399,
+    "pw": 2.55,
+    "IS": 1.167,
+    "OOS": 0.802,
+    "all": 0.984
+   },
+   "ES": {
+    "n": 415,
+    "pw": 2.65,
+    "IS": 1.2,
+    "OOS": 1.138,
+    "all": 1.171
+   }
+  },
+  "FTF|trend=off|FIX|2R": {
+   "NQ": {
+    "n": 399,
+    "pw": 2.55,
+    "IS": 1.354,
+    "OOS": 1.035,
+    "all": 1.185
+   },
+   "ES": {
+    "n": 415,
+    "pw": 2.65,
+    "IS": 1.17,
+    "OOS": 1.153,
+    "all": 1.162
+   }
+  },
+  "FTF|trend=off|FIX|close": {
+   "NQ": {
+    "n": 399,
+    "pw": 2.55,
+    "IS": 1.351,
+    "OOS": 0.899,
+    "all": 1.121
+   },
+   "ES": {
+    "n": 415,
+    "pw": 2.65,
+    "IS": 1.29,
+    "OOS": 1.004,
+    "all": 1.149
+   }
+  },
+  "FTF|trend=on|MID|2R": {
+   "NQ": {
+    "n": 206,
+    "pw": 1.32,
+    "IS": 1.28,
+    "OOS": 1.136,
+    "all": 1.211
+   },
+   "ES": {
+    "n": 209,
+    "pw": 1.34,
+    "IS": 1.202,
+    "OOS": 1.102,
+    "all": 1.157
+   }
+  },
+  "FTF|trend=on|MID|close": {
+   "NQ": {
+    "n": 206,
+    "pw": 1.32,
+    "IS": 1.421,
+    "OOS": 1.082,
+    "all": 1.258
+   },
+   "ES": {
+    "n": 209,
+    "pw": 1.34,
+    "IS": 1.28,
+    "OOS": 1.049,
+    "all": 1.176
+   }
+  },
+  "FTF|trend=on|FIX|2R": {
+   "NQ": {
+    "n": 206,
+    "pw": 1.32,
+    "IS": 1.492,
+    "OOS": 1.201,
+    "all": 1.346
+   },
+   "ES": {
+    "n": 209,
+    "pw": 1.34,
+    "IS": 1.16,
+    "OOS": 1.153,
+    "all": 1.157
+   }
+  },
+  "FTF|trend=on|FIX|close": {
+   "NQ": {
+    "n": 206,
+    "pw": 1.32,
+    "IS": 1.611,
+    "OOS": 1.071,
+    "all": 1.345
+   },
+   "ES": {
+    "n": 209,
+    "pw": 1.34,
+    "IS": 1.226,
+    "OOS": 0.954,
+    "all": 1.101
+   }
+  },
+  "MIRROR|trend=off|-|-": {
+   "NQ": {
+    "n": 637,
+    "pw": 4.07,
+    "IS": 1.246,
+    "OOS": 1.231,
+    "all": 1.238
+   },
+   "ES": {
+    "n": 642,
+    "pw": 4.1,
+    "IS": 1.02,
+    "OOS": 0.844,
+    "all": 0.93
+   }
+  },
+  "MIRROR|trend=on|-|-": {
+   "NQ": {
+    "n": 323,
+    "pw": 2.07,
+    "IS": 1.471,
+    "OOS": 1.163,
+    "all": 1.32
+   },
+   "ES": {
+    "n": 326,
+    "pw": 2.08,
+    "IS": 1.058,
+    "OOS": 0.777,
+    "all": 0.917
+   }
+  }
+ },
+ "median_IS_pf_NQ": 1.288,
+ "median_OOS_pf_NQ_info": 0.991,
+ "median_IS_pf_ES": 1.171,
+ "median_OOS_pf_ES_info": 0.976,
+ "chosen": "FTF|trend=on|FIX|close",
+ "chosen_IS_score": 1.405,
+ "chosen_plateau": 1.347,
+ "partials": {
+  "ACCEPT|trend=off|MID|close|ES": [
+   1.173,
+   1.006,
+   691
+  ],
+  "ACCEPT|trend=on|MID|2R|NQ": [
+   1.184,
+   1.039,
+   352
+  ],
+  "ACCEPT|trend=on|MID|close|NQ": [
+   1.342,
+   1.043,
+   352
+  ],
+  "FTF|trend=off|MID|2R|ES": [
+   1.145,
+   1.164,
+   415
+  ],
+  "FTF|trend=off|MID|close|ES": [
+   1.2,
+   1.138,
+   415
+  ],
+  "FTF|trend=off|FIX|2R|NQ": [
+   1.354,
+   1.035,
+   399
+  ],
+  "FTF|trend=off|FIX|2R|ES": [
+   1.17,
+   1.153,
+   415
+  ],
+  "FTF|trend=off|FIX|close|ES": [
+   1.29,
+   1.004,
+   415
+  ],
+  "FTF|trend=on|MID|2R|NQ": [
+   1.28,
+   1.136,
+   206
+  ],
+  "FTF|trend=on|MID|2R|ES": [
+   1.202,
+   1.102,
+   209
+  ],
+  "FTF|trend=on|MID|close|NQ": [
+   1.421,
+   1.082,
+   206
+  ],
+  "FTF|trend=on|MID|close|ES": [
+   1.28,
+   1.049,
+   209
+  ],
+  "FTF|trend=on|FIX|2R|NQ": [
+   1.492,
+   1.201,
+   206
+  ],
+  "FTF|trend=on|FIX|2R|ES": [
+   1.16,
+   1.153,
+   209
+  ],
+  "FTF|trend=on|FIX|close|NQ": [
+   1.611,
+   1.071,
+   206
+  ],
+  "MIRROR|trend=off|-|-|NQ": [
+   1.246,
+   1.231,
+   637
+  ],
+  "MIRROR|trend=on|-|-|NQ": [
+   1.471,
+   1.163,
+   323
+  ]
+ },
+ "NQ": {
+  "n": 206,
+  "per_week": 1.32,
+  "win": 30.6,
+  "avgW": 3.1,
+  "avgL": -1.01,
+  "pf": 1.345,
+  "netR": 50.0,
+  "maxDD_R": -13.6,
+  "lose_streak": 8,
+  "pf_IS": 1.611,
+  "n_IS": 106,
+  "pf_OOS": 1.071,
+  "n_OOS": 100,
+  "avg_pts": 9.09,
+  "med_risk_pts": 38.63,
+  "med_hold_min": 84.0,
+  "by_year": {
+   "2023": {
+    "n": 21,
+    "pf": 0.66
+   },
+   "2024": {
+    "n": 73,
+    "pf": 1.99
+   },
+   "2025": {
+    "n": 61,
+    "pf": 1.03
+   },
+   "2026": {
+    "n": 51,
+    "pf": 1.18
+   }
+  },
+  "by_side": {
+   "short": {
+    "n": 61,
+    "pf": 1.61
+   },
+   "long": {
+    "n": 145,
+    "pf": 1.23
+   }
+  },
+  "pf_2x_cost": 1.28,
+  "pf_no_cost": 1.415,
+  "boot_pf_5_50_95": [
+   0.99,
+   1.34,
+   1.76
+  ],
+  "p_pf_below_1": 0.058,
+  "pf_opposite": 0.657,
+  "pf_random_dir_hand": 0.918,
+  "pf_random_time_hand": 1.074
+ },
+ "NQ_controls": {
+  "classic_fade": {
+   "n": 637,
+   "pw": 4.07,
+   "IS": 0.636,
+   "OOS": 0.896,
+   "all": 0.766
+  },
+  "classic_fade_nocost": {
+   "n": 637,
+   "pw": 4.07,
+   "IS": 0.686,
+   "OOS": 0.943,
+   "all": 0.815
+  },
+  "classic_fade_k>j": {
+   "n": 622,
+   "pw": 3.98,
+   "IS": 0.644,
+   "OOS": 0.863,
+   "all": 0.753
+  },
+  "mirror_k>j": {
+   "n": 622,
+   "pw": 3.98,
+   "IS": 1.331,
+   "OOS": 1.215,
+   "all": 1.276
+  },
+  "accept_rand_dir": 0.945,
+  "chosen_k>j": {
+   "n": 179,
+   "pw": 1.14,
+   "IS": 1.665,
+   "OOS": 0.978,
+   "all": 1.324
+  },
+  "same_signals_market_entry": {
+   "n": 323,
+   "pw": 2.07,
+   "IS": 1.405,
+   "OOS": 1.026,
+   "all": 1.218
+  },
+  "all_days_trend_1000": {
+   "n": 773,
+   "pw": 4.94,
+   "IS": 1.019,
+   "OOS": 1.214,
+   "all": 1.114
+  }
+ },
+ "ES": {
+  "n": 209,
+  "per_week": 1.34,
+  "win": 27.8,
+  "avgW": 2.96,
+  "avgL": -1.03,
+  "pf": 1.101,
+  "netR": 15.8,
+  "maxDD_R": -13.8,
+  "lose_streak": 11,
+  "pf_IS": 1.226,
+  "n_IS": 113,
+  "pf_OOS": 0.954,
+  "n_OOS": 96,
+  "avg_pts": 0.26,
+  "med_risk_pts": 7.84,
+  "med_hold_min": 80.0,
+  "by_year": {
+   "2023": {
+    "n": 23,
+    "pf": 0.79
+   },
+   "2024": {
+    "n": 77,
+    "pf": 1.32
+   },
+   "2025": {
+    "n": 61,
+    "pf": 1.14
+   },
+   "2026": {
+    "n": 48,
+    "pf": 0.84
+   }
+  },
+  "by_side": {
+   "short": {
+    "n": 54,
+    "pf": 0.92
+   },
+   "long": {
+    "n": 155,
+    "pf": 1.18
+   }
+  },
+  "pf_2x_cost": 0.995,
+  "pf_no_cost": 1.225,
+  "boot_pf_5_50_95": [
+   0.81,
+   1.09,
+   1.46
+  ],
+  "p_pf_below_1": 0.321,
+  "pf_opposite": 0.614,
+  "pf_random_dir_hand": 0.894,
+  "pf_random_time_hand": 0.925
+ },
+ "ES_controls": {
+  "classic_fade": {
+   "n": 641,
+   "pw": 4.1,
+   "IS": 0.564,
+   "OOS": 1.007,
+   "all": 0.773
+  },
+  "classic_fade_nocost": {
+   "n": 641,
+   "pw": 4.1,
+   "IS": 0.657,
+   "OOS": 1.124,
+   "all": 0.88
+  },
+  "classic_fade_k>j": {
+   "n": 620,
+   "pw": 3.96,
+   "IS": 0.583,
+   "OOS": 1.06,
+   "all": 0.809
+  },
+  "mirror_k>j": {
+   "n": 621,
+   "pw": 3.97,
+   "IS": 1.039,
+   "OOS": 0.828,
+   "all": 0.93
+  },
+  "accept_rand_dir": 0.912,
+  "chosen_k>j": {
+   "n": 176,
+   "pw": 1.13,
+   "IS": 1.532,
+   "OOS": 1.128,
+   "all": 1.348
+  },
+  "same_signals_market_entry": {
+   "n": 326,
+   "pw": 2.08,
+   "IS": 1.596,
+   "OOS": 0.808,
+   "all": 1.198
+  },
+  "all_days_trend_1000": {
+   "n": 773,
+   "pw": 4.94,
+   "IS": 1.028,
+   "OOS": 1.028,
+   "all": 1.028
+  }
+ },
+ "verdict": "FAIL",
+ "notes": "Classic SB fade replicates the proposer (IS PF NQ 0.64 / ES 0.56) but its failure decays OOS (0.90 / 1.01), so the mirror only holds on NQ. Chosen FTF trend-on FIX close: NQ 1.61/1.07, ES 1.23/0.95, 1.3 trades/week. FTF family is >1 IS and OOS on both markets in most cells (e.g. trend-on 2R exits) but not chosen and below PASS levels."
+}

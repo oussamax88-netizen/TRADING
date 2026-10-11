@@ -1,0 +1,811 @@
+{
+ "slug": "ftf_trend_volx",
+ "name": "SB failure-to-fail with 20d trend, vol not compressed",
+ "variants_tested": 16,
+ "grid": {
+  "FTF|trend=on|MID|2R|lb=none": {
+   "NQ": {
+    "n": 206,
+    "pw": 1.32,
+    "n_IS": 106,
+    "IS": 1.28,
+    "OOS": 1.136,
+    "all": 1.211
+   },
+   "ES": {
+    "n": 209,
+    "pw": 1.34,
+    "n_IS": 113,
+    "IS": 1.202,
+    "OOS": 1.102,
+    "all": 1.157
+   }
+  },
+  "FTF|trend=on|MID|2R|lb=0.85": {
+   "NQ": {
+    "n": 170,
+    "pw": 1.09,
+    "n_IS": 96,
+    "IS": 1.311,
+    "OOS": 1.133,
+    "all": 1.233
+   },
+   "ES": {
+    "n": 155,
+    "pw": 0.99,
+    "n_IS": 103,
+    "IS": 1.267,
+    "OOS": 0.932,
+    "all": 1.15
+   }
+  },
+  "FTF|trend=on|MID|2R|lb=0.95": {
+   "NQ": {
+    "n": 133,
+    "pw": 0.85,
+    "n_IS": 73,
+    "IS": 1.507,
+    "OOS": 1.194,
+    "all": 1.364
+   },
+   "ES": {
+    "n": 113,
+    "pw": 0.72,
+    "n_IS": 77,
+    "IS": 1.202,
+    "OOS": 1.071,
+    "all": 1.16
+   }
+  },
+  "FTF|trend=on|MID|2R|lb=1.05": {
+   "NQ": {
+    "n": 94,
+    "pw": 0.6,
+    "n_IS": 50,
+    "IS": 1.619,
+    "OOS": 0.873,
+    "all": 1.23
+   },
+   "ES": {
+    "n": 88,
+    "pw": 0.56,
+    "n_IS": 61,
+    "IS": 1.199,
+    "OOS": 0.91,
+    "all": 1.102
+   }
+  },
+  "FTF|trend=on|MID|close|lb=none": {
+   "NQ": {
+    "n": 206,
+    "pw": 1.32,
+    "n_IS": 106,
+    "IS": 1.421,
+    "OOS": 1.082,
+    "all": 1.258
+   },
+   "ES": {
+    "n": 209,
+    "pw": 1.34,
+    "n_IS": 113,
+    "IS": 1.28,
+    "OOS": 1.049,
+    "all": 1.176
+   }
+  },
+  "FTF|trend=on|MID|close|lb=0.85": {
+   "NQ": {
+    "n": 170,
+    "pw": 1.09,
+    "n_IS": 96,
+    "IS": 1.331,
+    "OOS": 1.123,
+    "all": 1.243
+   },
+   "ES": {
+    "n": 155,
+    "pw": 0.99,
+    "n_IS": 103,
+    "IS": 1.406,
+    "OOS": 1.107,
+    "all": 1.305
+   }
+  },
+  "FTF|trend=on|MID|close|lb=0.95": {
+   "NQ": {
+    "n": 133,
+    "pw": 0.85,
+    "n_IS": 73,
+    "IS": 1.439,
+    "OOS": 1.248,
+    "all": 1.357
+   },
+   "ES": {
+    "n": 113,
+    "pw": 0.72,
+    "n_IS": 77,
+    "IS": 1.383,
+    "OOS": 0.956,
+    "all": 1.247
+   }
+  },
+  "FTF|trend=on|MID|close|lb=1.05": {
+   "NQ": {
+    "n": 94,
+    "pw": 0.6,
+    "n_IS": 50,
+    "IS": 1.428,
+    "OOS": 0.66,
+    "all": 1.057
+   },
+   "ES": {
+    "n": 88,
+    "pw": 0.56,
+    "n_IS": 61,
+    "IS": 1.302,
+    "OOS": 1.004,
+    "all": 1.214
+   }
+  },
+  "FTF|trend=on|FIX|2R|lb=none": {
+   "NQ": {
+    "n": 206,
+    "pw": 1.32,
+    "n_IS": 106,
+    "IS": 1.492,
+    "OOS": 1.201,
+    "all": 1.346
+   },
+   "ES": {
+    "n": 209,
+    "pw": 1.34,
+    "n_IS": 113,
+    "IS": 1.16,
+    "OOS": 1.153,
+    "all": 1.157
+   }
+  },
+  "FTF|trend=on|FIX|2R|lb=0.85": {
+   "NQ": {
+    "n": 170,
+    "pw": 1.09,
+    "n_IS": 96,
+    "IS": 1.487,
+    "OOS": 1.25,
+    "all": 1.381
+   },
+   "ES": {
+    "n": 155,
+    "pw": 0.99,
+    "n_IS": 103,
+    "IS": 1.144,
+    "OOS": 1.303,
+    "all": 1.193
+   }
+  },
+  "FTF|trend=on|FIX|2R|lb=0.95": {
+   "NQ": {
+    "n": 133,
+    "pw": 0.85,
+    "n_IS": 73,
+    "IS": 1.654,
+    "OOS": 1.375,
+    "all": 1.525
+   },
+   "ES": {
+    "n": 113,
+    "pw": 0.72,
+    "n_IS": 77,
+    "IS": 1.224,
+    "OOS": 1.545,
+    "all": 1.316
+   }
+  },
+  "FTF|trend=on|FIX|2R|lb=1.05": {
+   "NQ": {
+    "n": 94,
+    "pw": 0.6,
+    "n_IS": 50,
+    "IS": 2.196,
+    "OOS": 1.163,
+    "all": 1.643
+   },
+   "ES": {
+    "n": 88,
+    "pw": 0.56,
+    "n_IS": 61,
+    "IS": 1.244,
+    "OOS": 1.028,
+    "all": 1.176
+   }
+  },
+  "FTF|trend=on|FIX|close|lb=none": {
+   "NQ": {
+    "n": 206,
+    "pw": 1.32,
+    "n_IS": 106,
+    "IS": 1.611,
+    "OOS": 1.071,
+    "all": 1.345
+   },
+   "ES": {
+    "n": 209,
+    "pw": 1.34,
+    "n_IS": 113,
+    "IS": 1.226,
+    "OOS": 0.954,
+    "all": 1.101
+   }
+  },
+  "FTF|trend=on|FIX|close|lb=0.85": {
+   "NQ": {
+    "n": 170,
+    "pw": 1.09,
+    "n_IS": 96,
+    "IS": 1.547,
+    "OOS": 0.966,
+    "all": 1.288
+   },
+   "ES": {
+    "n": 155,
+    "pw": 0.99,
+    "n_IS": 103,
+    "IS": 1.332,
+    "OOS": 0.929,
+    "all": 1.196
+   }
+  },
+  "FTF|trend=on|FIX|close|lb=0.95": {
+   "NQ": {
+    "n": 133,
+    "pw": 0.85,
+    "n_IS": 73,
+    "IS": 1.626,
+    "OOS": 1.036,
+    "all": 1.356
+   },
+   "ES": {
+    "n": 113,
+    "pw": 0.72,
+    "n_IS": 77,
+    "IS": 1.422,
+    "OOS": 0.539,
+    "all": 1.127
+   }
+  },
+  "FTF|trend=on|FIX|close|lb=1.05": {
+   "NQ": {
+    "n": 94,
+    "pw": 0.6,
+    "n_IS": 50,
+    "IS": 2.018,
+    "OOS": 0.629,
+    "all": 1.324
+   },
+   "ES": {
+    "n": 88,
+    "pw": 0.56,
+    "n_IS": 61,
+    "IS": 1.292,
+    "OOS": 0.388,
+    "all": 1.003
+   }
+  }
+ },
+ "sanity_none_reproduces_SB": true,
+ "median_IS_pf_NQ": 1.499,
+ "median_OOS_pf_NQ_info": 1.128,
+ "median_IS_pf_ES": 1.256,
+ "median_OOS_pf_ES_info": 1.016,
+ "selection": {
+  "FTF|trend=on|MID|2R|lb=none": {
+   "score": 1.202,
+   "plateau": 1.234,
+   "eligible": true
+  },
+  "FTF|trend=on|MID|2R|lb=0.85": {
+   "score": 1.267,
+   "plateau": 1.224,
+   "eligible": true
+  },
+  "FTF|trend=on|MID|2R|lb=0.95": {
+   "score": 1.202,
+   "plateau": 1.223,
+   "eligible": true
+  },
+  "FTF|trend=on|MID|2R|lb=1.05": {
+   "score": 1.199,
+   "plateau": 1.2,
+   "eligible": true
+  },
+  "FTF|trend=on|MID|close|lb=none": {
+   "score": 1.28,
+   "plateau": 1.305,
+   "eligible": true
+  },
+  "FTF|trend=on|MID|close|lb=0.85": {
+   "score": 1.331,
+   "plateau": 1.331,
+   "eligible": true
+  },
+  "FTF|trend=on|MID|close|lb=0.95": {
+   "score": 1.383,
+   "plateau": 1.339,
+   "eligible": true
+  },
+  "FTF|trend=on|MID|close|lb=1.05": {
+   "score": 1.302,
+   "plateau": 1.343,
+   "eligible": true
+  },
+  "FTF|trend=on|FIX|2R|lb=none": {
+   "score": 1.16,
+   "plateau": 1.152,
+   "eligible": true
+  },
+  "FTF|trend=on|FIX|2R|lb=0.85": {
+   "score": 1.144,
+   "plateau": 1.176,
+   "eligible": true
+  },
+  "FTF|trend=on|FIX|2R|lb=0.95": {
+   "score": 1.224,
+   "plateau": 1.204,
+   "eligible": true
+  },
+  "FTF|trend=on|FIX|2R|lb=1.05": {
+   "score": 1.244,
+   "plateau": 1.234,
+   "eligible": true
+  },
+  "FTF|trend=on|FIX|close|lb=none": {
+   "score": 1.226,
+   "plateau": 1.279,
+   "eligible": true
+  },
+  "FTF|trend=on|FIX|close|lb=0.85": {
+   "score": 1.332,
+   "plateau": 1.327,
+   "eligible": true
+  },
+  "FTF|trend=on|FIX|close|lb=0.95": {
+   "score": 1.422,
+   "plateau": 1.349,
+   "eligible": true
+  },
+  "FTF|trend=on|FIX|close|lb=1.05": {
+   "score": 1.292,
+   "plateau": 1.357,
+   "eligible": true
+  }
+ },
+ "chosen": "FTF|trend=on|FIX|close|lb=1.05",
+ "partials_grid_IS_OOS_ge_1.1": {
+  "FTF|trend=on|MID|2R|lb=none|NQ": [
+   1.28,
+   1.136,
+   206
+  ],
+  "FTF|trend=on|MID|2R|lb=none|ES": [
+   1.202,
+   1.102,
+   209
+  ],
+  "FTF|trend=on|MID|2R|lb=0.85|NQ": [
+   1.311,
+   1.133,
+   170
+  ],
+  "FTF|trend=on|MID|2R|lb=0.95|NQ": [
+   1.507,
+   1.194,
+   133
+  ],
+  "FTF|trend=on|MID|close|lb=0.85|NQ": [
+   1.331,
+   1.123,
+   170
+  ],
+  "FTF|trend=on|MID|close|lb=0.85|ES": [
+   1.406,
+   1.107,
+   155
+  ],
+  "FTF|trend=on|MID|close|lb=0.95|NQ": [
+   1.439,
+   1.248,
+   133
+  ],
+  "FTF|trend=on|FIX|2R|lb=none|NQ": [
+   1.492,
+   1.201,
+   206
+  ],
+  "FTF|trend=on|FIX|2R|lb=none|ES": [
+   1.16,
+   1.153,
+   209
+  ],
+  "FTF|trend=on|FIX|2R|lb=0.85|NQ": [
+   1.487,
+   1.25,
+   170
+  ],
+  "FTF|trend=on|FIX|2R|lb=0.85|ES": [
+   1.144,
+   1.303,
+   155
+  ],
+  "FTF|trend=on|FIX|2R|lb=0.95|NQ": [
+   1.654,
+   1.375,
+   133
+  ],
+  "FTF|trend=on|FIX|2R|lb=0.95|ES": [
+   1.224,
+   1.545,
+   113
+  ],
+  "FTF|trend=on|FIX|2R|lb=1.05|NQ": [
+   2.196,
+   1.163,
+   94
+  ]
+ },
+ "NQ": {
+  "n": 94,
+  "per_week": 0.6,
+  "win": 31.9,
+  "avgW": 2.89,
+  "avgL": -1.02,
+  "pf": 1.324,
+  "netR": 21.2,
+  "maxDD_R": -15.6,
+  "lose_streak": 8,
+  "pf_IS": 2.018,
+  "n_IS": 50,
+  "pf_OOS": 0.629,
+  "n_OOS": 44,
+  "avg_pts": 6.78,
+  "med_risk_pts": 52.46,
+  "med_hold_min": 92.5,
+  "by_year": {
+   "2023": {
+    "n": 9,
+    "pf": 1.14
+   },
+   "2024": {
+    "n": 30,
+    "pf": 2.47
+   },
+   "2025": {
+    "n": 30,
+    "pf": 1.06
+   },
+   "2026": {
+    "n": 25,
+    "pf": 0.56
+   }
+  },
+  "by_side": {
+   "short": {
+    "n": 50,
+    "pf": 1.62
+   },
+   "long": {
+    "n": 44,
+    "pf": 0.95
+   }
+  },
+  "pf_2x_cost": 1.272,
+  "pf_no_cost": 1.379,
+  "boot_pf_5_50_95": [
+   0.8,
+   1.3,
+   2.0
+  ],
+  "p_pf_below_1": 0.187,
+  "pf_opposite": 0.852,
+  "pf_random_dir_hand": 0.897,
+  "pf_random_time_hand": 1.03,
+  "by_year_str": "2023:1.14(9) 2024:2.47(30) 2025:1.06(30) 2026:0.56(25)"
+ },
+ "NQ_lookahead_ok": true,
+ "NQ_controls": {
+  "complement_ratio_lt_0.85": {
+   "n": 36,
+   "pw": 0.23,
+   "n_IS": 10,
+   "IS": 2.278,
+   "OOS": 1.399,
+   "all": 1.636
+  },
+  "complement_ratio_lt_0.95": {
+   "n": 73,
+   "pw": 0.47,
+   "n_IS": 33,
+   "IS": 1.576,
+   "OOS": 1.123,
+   "all": 1.323
+  },
+  "complement_ratio_lt_1.05": {
+   "n": 112,
+   "pw": 0.72,
+   "n_IS": 56,
+   "IS": 1.283,
+   "OOS": 1.444,
+   "all": 1.362
+  },
+  "vol_day_trend_baseline_chosen_lb": {
+   "n": 373,
+   "pw": 2.38,
+   "n_IS": 195,
+   "IS": 1.12,
+   "OOS": 0.89,
+   "all": 1.01
+  },
+  "all_day_trend_baseline": {
+   "n": 773,
+   "pw": 4.94,
+   "n_IS": 385,
+   "IS": 1.019,
+   "OOS": 1.214,
+   "all": 1.114
+  }
+ },
+ "NQ_tdh": {
+  "strategy_days": 94,
+  "tdh_days": 365,
+  "overlap_days": 77,
+  "overlap_share": 0.819,
+  "same_dir_on_overlap": 77,
+  "corr_daily_R_all_days": 0.252,
+  "tdh_proxy": {
+   "n_IS": 184,
+   "pf_IS": 1.664,
+   "n_OOS": 181,
+   "pf_OOS": 1.098
+  },
+  "on_tdh_days": {
+   "n_IS": 40,
+   "pf_IS": 1.555,
+   "n_OOS": 37,
+   "pf_OOS": 0.537
+  },
+  "non_tdh_days": {
+   "n_IS": 10,
+   "pf_IS": 5.21,
+   "n_OOS": 7,
+   "pf_OOS": 1.124
+  }
+ },
+ "NQ_partial_subsets": {
+  "long": {
+   "n_IS": 22,
+   "pf_IS": 0.97,
+   "n_OOS": 22,
+   "pf_OOS": 0.93
+  },
+  "short": {
+   "n_IS": 28,
+   "pf_IS": 2.856,
+   "n_OOS": 22,
+   "pf_OOS": 0.394
+  },
+  "unfiltered_ratio_0-0.85": {
+   "n_IS": 10,
+   "pf_IS": 2.278,
+   "n_OOS": 26,
+   "pf_OOS": 1.399
+  },
+  "unfiltered_ratio_0.85-0.95": {
+   "n_IS": 23,
+   "pf_IS": 1.301,
+   "n_OOS": 14,
+   "pf_OOS": 0.705
+  },
+  "unfiltered_ratio_0.95-1.05": {
+   "n_IS": 23,
+   "pf_IS": 0.917,
+   "n_OOS": 16,
+   "pf_OOS": 2.354
+  },
+  "unfiltered_ratio_1.05-1.3": {
+   "n_IS": 27,
+   "pf_IS": 1.477,
+   "n_OOS": 19,
+   "pf_OOS": 0.626
+  },
+  "unfiltered_ratio_1.3-99": {
+   "n_IS": 23,
+   "pf_IS": 2.799,
+   "n_OOS": 25,
+   "pf_OOS": 0.631
+  },
+  "unfiltered_ratio_nan": {
+   "n_IS": 0,
+   "pf_IS": null,
+   "n_OOS": 0,
+   "pf_OOS": null
+  }
+ },
+ "ES": {
+  "n": 88,
+  "per_week": 0.56,
+  "win": 23.9,
+  "avgW": 3.27,
+  "avgL": -1.02,
+  "pf": 1.003,
+  "netR": 0.2,
+  "maxDD_R": -24.0,
+  "lose_streak": 18,
+  "pf_IS": 1.292,
+  "n_IS": 61,
+  "pf_OOS": 0.388,
+  "n_OOS": 27,
+  "avg_pts": -1.13,
+  "med_risk_pts": 9.25,
+  "med_hold_min": 73.0,
+  "by_year": {
+   "2023": {
+    "n": 12,
+    "pf": 0.7
+   },
+   "2024": {
+    "n": 37,
+    "pf": 1.61
+   },
+   "2025": {
+    "n": 27,
+    "pf": 0.58
+   },
+   "2026": {
+    "n": 12,
+    "pf": 0.52
+   }
+  },
+  "by_side": {
+   "short": {
+    "n": 39,
+    "pf": 1.05
+   },
+   "long": {
+    "n": 49,
+    "pf": 0.96
+   }
+  },
+  "pf_2x_cost": 0.924,
+  "pf_no_cost": 1.092,
+  "boot_pf_5_50_95": [
+   0.56,
+   1.0,
+   1.57
+  ],
+  "p_pf_below_1": 0.503,
+  "pf_opposite": 0.527,
+  "pf_random_dir_hand": 0.891,
+  "pf_random_time_hand": 0.909,
+  "by_year_str": "2023:0.7(12) 2024:1.61(37) 2025:0.58(27) 2026:0.52(12)"
+ },
+ "ES_lookahead_ok": true,
+ "ES_controls": {
+  "complement_ratio_lt_0.85": {
+   "n": 54,
+   "pw": 0.35,
+   "n_IS": 10,
+   "IS": 0.391,
+   "OOS": 0.983,
+   "all": 0.853
+  },
+  "complement_ratio_lt_0.95": {
+   "n": 96,
+   "pw": 0.61,
+   "n_IS": 36,
+   "IS": 0.863,
+   "OOS": 1.212,
+   "all": 1.072
+  },
+  "complement_ratio_lt_1.05": {
+   "n": 121,
+   "pw": 0.77,
+   "n_IS": 52,
+   "IS": 1.145,
+   "OOS": 1.204,
+   "all": 1.179
+  },
+  "vol_day_trend_baseline_chosen_lb": {
+   "n": 361,
+   "pw": 2.31,
+   "n_IS": 204,
+   "IS": 1.272,
+   "OOS": 1.182,
+   "all": 1.233
+  },
+  "all_day_trend_baseline": {
+   "n": 773,
+   "pw": 4.94,
+   "n_IS": 385,
+   "IS": 1.028,
+   "OOS": 1.028,
+   "all": 1.028
+  }
+ },
+ "ES_tdh": {
+  "strategy_days": 88,
+  "tdh_days": 383,
+  "overlap_days": 67,
+  "overlap_share": 0.761,
+  "same_dir_on_overlap": 67,
+  "corr_daily_R_all_days": 0.191,
+  "tdh_proxy": {
+   "n_IS": 200,
+   "pf_IS": 1.065,
+   "n_OOS": 183,
+   "pf_OOS": 0.994
+  },
+  "on_tdh_days": {
+   "n_IS": 46,
+   "pf_IS": 0.825,
+   "n_OOS": 21,
+   "pf_OOS": 0.543
+  },
+  "non_tdh_days": {
+   "n_IS": 15,
+   "pf_IS": 3.351,
+   "n_OOS": 6,
+   "pf_OOS": 0.0
+  }
+ },
+ "ES_partial_subsets": {
+  "long": {
+   "n_IS": 35,
+   "pf_IS": 0.945,
+   "n_OOS": 14,
+   "pf_OOS": 1.015
+  },
+  "short": {
+   "n_IS": 26,
+   "pf_IS": 1.768,
+   "n_OOS": 13,
+   "pf_OOS": 0.0
+  },
+  "unfiltered_ratio_0-0.85": {
+   "n_IS": 10,
+   "pf_IS": 0.391,
+   "n_OOS": 44,
+   "pf_OOS": 0.983
+  },
+  "unfiltered_ratio_0.85-0.95": {
+   "n_IS": 26,
+   "pf_IS": 1.086,
+   "n_OOS": 16,
+   "pf_OOS": 1.925
+  },
+  "unfiltered_ratio_0.95-1.05": {
+   "n_IS": 16,
+   "pf_IS": 2.154,
+   "n_OOS": 9,
+   "pf_OOS": 1.142
+  },
+  "unfiltered_ratio_1.05-1.3": {
+   "n_IS": 32,
+   "pf_IS": 0.969,
+   "n_OOS": 14,
+   "pf_OOS": 0.575
+  },
+  "unfiltered_ratio_1.3-99": {
+   "n_IS": 29,
+   "pf_IS": 1.757,
+   "n_OOS": 13,
+   "pf_OOS": 0.217
+  },
+  "unfiltered_ratio_nan": {
+   "n_IS": 0,
+   "pf_IS": null,
+   "n_OOS": 0,
+   "pf_OOS": null
+  }
+ },
+ "verdict": "FAIL",
+ "notes": "Sanity: lb=none cells reproduce silver_bullet_inverse.json exactly. Chosen by the pre-set IS rule (min-PF score, lb-neighbour plateau; edge cell has one neighbour): FIX|close|lb=1.05 -> NQ IS 2.02 / OOS 0.63, ES 1.29 / 0.39, 0.6 tr/wk: FAIL. Middle-of-plateau alternative FIX|close|lb=0.95 also fails OOS (NQ 1.04, ES 0.54). Hold-to-close cells collapse OOS when filtered; the vol filter does not hold for this signal: unfiltered ratio buckets are non-monotone and flip between halves, complements are not weaker OOS (NQ ratio<1.05: 1.28/1.44). Info only (not chosen, not tradeable as a pick): the 2R cells stay >1.1 in both halves, e.g. FIX|2R|lb=0.95 NQ 1.65/1.38, ES 1.22/1.54, 0.8 tr/wk, hold ~35 min, 2x cost NQ 1.44 ES 1.17, ~77% overlap with TDH (same direction), non-TDH days NQ 1.66/1.65 (n 18/13), ES 1.25/1.56 (n 20/6) - small samples."
+}
