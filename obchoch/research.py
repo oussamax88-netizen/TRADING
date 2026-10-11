@@ -122,16 +122,15 @@ def build_table(S, mk, N=5, life=5):
         zz = z[z.dir == side]
         for zr in zz.itertuples(index=False):
             zlo, zhi = (zr.zlo, zr.zhi) if side == 1 else (-zr.zhi, -zr.zlo)
-            atr = a['atr'][zr.start]
-            if np.isnan(atr):
-                continue
             tk, j, away, lowest = find_signal(zr.start, zlo, zhi, dayi[zr.start] + LIFE[zr.tf], mod, dayi, o, h, l, c,
                                               a['is5'], f5c, sh, WIN_START, WIN_END)
             if j < 0 or j + 1 >= n or dayi[j + 1] != dayi[j] or mod[j + 1] >= FORCE_CLOSE:
                 continue
             e = j + 1; px = o[e]
             d = dayi[j]
-            atr = a['atr'][j]
+            atr = a['atr'][j]          # ATR of the trade date (zone may be created on a date with no RTH, e.g. Sunday evening)
+            if np.isnan(atr):
+                continue
             r = dict(side=side, tf=zr.tf, created=zr.created, cmod=pd.Timestamp(zr.created).hour * 60 + pd.Timestamp(zr.created).minute, disp=zr.disp, fvg=zr.fvg,
                      sweep_pd=(lowest < (pdl[d] if side == 1 else -pdh[d])) if not np.isnan(pdl[d]) else False,
                      zone_beyond_pd=(zlo < (pdl[d] if side == 1 else -pdh[d])) if not np.isnan(pdl[d]) else False, touch_k=tk, choch_k=j, entry_k=e, px=px, zlo=zlo, zhi=zhi,

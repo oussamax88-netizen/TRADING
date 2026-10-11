@@ -92,6 +92,7 @@ def build_arrays(d, ctx):
     a['trend_d'] = cd.trend_d.to_numpy()[a['dayi']]
     a['trend_d'] = np.nan_to_num(a['trend_d'])
     a['atr'] = cd.atr.to_numpy()[a['dayi']]
+    a['atr_next'] = pd.Series(a['atr']).bfill().to_numpy()
     return a
 
 
@@ -208,7 +209,7 @@ def run_variant(a, zones, p, cost):
         s = z.dir
         arr = sides[s]
         zlo, zhi = (z.zlo, z.zhi) if s == 1 else (-z.zhi, -z.zlo)
-        atr = a['atr'][z.start]
+        atr = a['atr_next'][z.start]   # first known ATR from the zone's start (Sunday-evening zones have no RTH date)
         if np.isnan(atr):
             continue
         r = run_zone(z.start, zlo, zhi, a['dayi'][z.start] + life, tmin, a['mod'], a['dayi'],
