@@ -1,0 +1,884 @@
+{
+ "slug": "po3_mo_reclaim",
+ "chosen": {
+  "W0": 510,
+  "depth": 0.1,
+  "ex": "close",
+  "trig": "CISD"
+ },
+ "variants_tested": 24,
+ "median_IS_pf": {
+  "NQ": 1.058,
+  "ES": 1.214
+ },
+ "median_OOS_pf_info": {
+  "NQ": 1.031,
+  "ES": 0.9
+ },
+ "grid": [
+  {
+   "trig": "PLAIN",
+   "ex": "close",
+   "W0": 180,
+   "depth": 0.1,
+   "NQ_n": 486,
+   "NQ_IS": 1.203,
+   "NQ_OOS": 1.003,
+   "ES_n": 476,
+   "ES_IS": 1.163,
+   "ES_OOS": 0.908,
+   "geo_IS": 1.183,
+   "plateau_IS": 1.162
+  },
+  {
+   "trig": "PLAIN",
+   "ex": "close",
+   "W0": 180,
+   "depth": 0.2,
+   "NQ_n": 301,
+   "NQ_IS": 0.949,
+   "NQ_OOS": 1.275,
+   "ES_n": 279,
+   "ES_IS": 1.074,
+   "ES_OOS": 1.193,
+   "geo_IS": 1.01,
+   "plateau_IS": 1.09
+  },
+  {
+   "trig": "PLAIN",
+   "ex": "close",
+   "W0": 420,
+   "depth": 0.1,
+   "NQ_n": 445,
+   "NQ_IS": 1.294,
+   "NQ_OOS": 1.038,
+   "ES_n": 439,
+   "ES_IS": 1.292,
+   "ES_OOS": 0.87,
+   "geo_IS": 1.293,
+   "plateau_IS": 1.195
+  },
+  {
+   "trig": "PLAIN",
+   "ex": "close",
+   "W0": 420,
+   "depth": 0.2,
+   "NQ_n": 285,
+   "NQ_IS": 0.982,
+   "NQ_OOS": 1.108,
+   "ES_n": 269,
+   "ES_IS": 1.181,
+   "ES_OOS": 0.954,
+   "geo_IS": 1.077,
+   "plateau_IS": 1.123
+  },
+  {
+   "trig": "PLAIN",
+   "ex": "close",
+   "W0": 510,
+   "depth": 0.1,
+   "NQ_n": 426,
+   "NQ_IS": 1.199,
+   "NQ_OOS": 0.899,
+   "ES_n": 414,
+   "ES_IS": 1.254,
+   "ES_OOS": 0.787,
+   "geo_IS": 1.226,
+   "plateau_IS": 1.21
+  },
+  {
+   "trig": "PLAIN",
+   "ex": "close",
+   "W0": 510,
+   "depth": 0.2,
+   "NQ_n": 277,
+   "NQ_IS": 0.996,
+   "NQ_OOS": 0.94,
+   "ES_n": 256,
+   "ES_IS": 1.241,
+   "ES_OOS": 0.892,
+   "geo_IS": 1.112,
+   "plateau_IS": 1.138
+  },
+  {
+   "trig": "PLAIN",
+   "ex": "tgt",
+   "W0": 180,
+   "depth": 0.1,
+   "NQ_n": 486,
+   "NQ_IS": 1.124,
+   "NQ_OOS": 1.024,
+   "ES_n": 476,
+   "ES_IS": 1.104,
+   "ES_OOS": 0.85,
+   "geo_IS": 1.114,
+   "plateau_IS": 1.103
+  },
+  {
+   "trig": "PLAIN",
+   "ex": "tgt",
+   "W0": 180,
+   "depth": 0.2,
+   "NQ_n": 301,
+   "NQ_IS": 0.85,
+   "NQ_OOS": 1.281,
+   "ES_n": 279,
+   "ES_IS": 1.118,
+   "ES_OOS": 1.15,
+   "geo_IS": 0.975,
+   "plateau_IS": 1.045
+  },
+  {
+   "trig": "PLAIN",
+   "ex": "tgt",
+   "W0": 420,
+   "depth": 0.1,
+   "NQ_n": 445,
+   "NQ_IS": 1.219,
+   "NQ_OOS": 1.055,
+   "ES_n": 439,
+   "ES_IS": 1.221,
+   "ES_OOS": 0.866,
+   "geo_IS": 1.22,
+   "plateau_IS": 1.14
+  },
+  {
+   "trig": "PLAIN",
+   "ex": "tgt",
+   "W0": 420,
+   "depth": 0.2,
+   "NQ_n": 285,
+   "NQ_IS": 0.909,
+   "NQ_OOS": 1.138,
+   "ES_n": 269,
+   "ES_IS": 1.207,
+   "ES_OOS": 0.992,
+   "geo_IS": 1.047,
+   "plateau_IS": 1.09
+  },
+  {
+   "trig": "PLAIN",
+   "ex": "tgt",
+   "W0": 510,
+   "depth": 0.1,
+   "NQ_n": 426,
+   "NQ_IS": 1.126,
+   "NQ_OOS": 0.931,
+   "ES_n": 414,
+   "ES_IS": 1.232,
+   "ES_OOS": 0.803,
+   "geo_IS": 1.178,
+   "plateau_IS": 1.171
+  },
+  {
+   "trig": "PLAIN",
+   "ex": "tgt",
+   "W0": 510,
+   "depth": 0.2,
+   "NQ_n": 277,
+   "NQ_IS": 0.947,
+   "NQ_OOS": 0.983,
+   "ES_n": 256,
+   "ES_IS": 1.315,
+   "ES_OOS": 0.944,
+   "geo_IS": 1.116,
+   "plateau_IS": 1.114
+  },
+  {
+   "trig": "CISD",
+   "ex": "close",
+   "W0": 180,
+   "depth": 0.1,
+   "NQ_n": 486,
+   "NQ_IS": 1.2,
+   "NQ_OOS": 1.003,
+   "ES_n": 476,
+   "ES_IS": 1.182,
+   "ES_OOS": 0.908,
+   "geo_IS": 1.191,
+   "plateau_IS": 1.165
+  },
+  {
+   "trig": "CISD",
+   "ex": "close",
+   "W0": 180,
+   "depth": 0.2,
+   "NQ_n": 301,
+   "NQ_IS": 0.942,
+   "NQ_OOS": 1.275,
+   "ES_n": 279,
+   "ES_IS": 1.067,
+   "ES_OOS": 1.194,
+   "geo_IS": 1.003,
+   "plateau_IS": 1.087
+  },
+  {
+   "trig": "CISD",
+   "ex": "close",
+   "W0": 420,
+   "depth": 0.1,
+   "NQ_n": 445,
+   "NQ_IS": 1.289,
+   "NQ_OOS": 1.038,
+   "ES_n": 439,
+   "ES_IS": 1.317,
+   "ES_OOS": 0.871,
+   "geo_IS": 1.303,
+   "plateau_IS": 1.2
+  },
+  {
+   "trig": "CISD",
+   "ex": "close",
+   "W0": 420,
+   "depth": 0.2,
+   "NQ_n": 285,
+   "NQ_IS": 0.974,
+   "NQ_OOS": 1.109,
+   "ES_n": 269,
+   "ES_IS": 1.173,
+   "ES_OOS": 0.955,
+   "geo_IS": 1.069,
+   "plateau_IS": 1.119
+  },
+  {
+   "trig": "CISD",
+   "ex": "close",
+   "W0": 510,
+   "depth": 0.1,
+   "NQ_n": 426,
+   "NQ_IS": 1.194,
+   "NQ_OOS": 0.899,
+   "ES_n": 414,
+   "ES_IS": 1.284,
+   "ES_OOS": 0.787,
+   "geo_IS": 1.238,
+   "plateau_IS": 1.215
+  },
+  {
+   "trig": "CISD",
+   "ex": "close",
+   "W0": 510,
+   "depth": 0.2,
+   "NQ_n": 277,
+   "NQ_IS": 0.987,
+   "NQ_OOS": 0.94,
+   "ES_n": 256,
+   "ES_IS": 1.232,
+   "ES_OOS": 0.892,
+   "geo_IS": 1.103,
+   "plateau_IS": 1.137
+  },
+  {
+   "trig": "CISD",
+   "ex": "tgt",
+   "W0": 180,
+   "depth": 0.1,
+   "NQ_n": 486,
+   "NQ_IS": 1.12,
+   "NQ_OOS": 1.024,
+   "ES_n": 476,
+   "ES_IS": 1.118,
+   "ES_OOS": 0.85,
+   "geo_IS": 1.119,
+   "plateau_IS": 1.105
+  },
+  {
+   "trig": "CISD",
+   "ex": "tgt",
+   "W0": 180,
+   "depth": 0.2,
+   "NQ_n": 301,
+   "NQ_IS": 0.843,
+   "NQ_OOS": 1.281,
+   "ES_n": 279,
+   "ES_IS": 1.11,
+   "ES_OOS": 1.151,
+   "geo_IS": 0.967,
+   "plateau_IS": 1.042
+  },
+  {
+   "trig": "CISD",
+   "ex": "tgt",
+   "W0": 420,
+   "depth": 0.1,
+   "NQ_n": 445,
+   "NQ_IS": 1.214,
+   "NQ_OOS": 1.055,
+   "ES_n": 439,
+   "ES_IS": 1.241,
+   "ES_OOS": 0.866,
+   "geo_IS": 1.227,
+   "plateau_IS": 1.143
+  },
+  {
+   "trig": "CISD",
+   "ex": "tgt",
+   "W0": 420,
+   "depth": 0.2,
+   "NQ_n": 285,
+   "NQ_IS": 0.901,
+   "NQ_OOS": 1.138,
+   "ES_n": 269,
+   "ES_IS": 1.199,
+   "ES_OOS": 0.993,
+   "geo_IS": 1.039,
+   "plateau_IS": 1.085
+  },
+  {
+   "trig": "CISD",
+   "ex": "tgt",
+   "W0": 510,
+   "depth": 0.1,
+   "NQ_n": 426,
+   "NQ_IS": 1.121,
+   "NQ_OOS": 0.931,
+   "ES_n": 414,
+   "ES_IS": 1.256,
+   "ES_OOS": 0.803,
+   "geo_IS": 1.187,
+   "plateau_IS": 1.173
+  },
+  {
+   "trig": "CISD",
+   "ex": "tgt",
+   "W0": 510,
+   "depth": 0.2,
+   "NQ_n": 277,
+   "NQ_IS": 0.938,
+   "NQ_OOS": 0.983,
+   "ES_n": 256,
+   "ES_IS": 1.305,
+   "ES_OOS": 0.944,
+   "geo_IS": 1.106,
+   "plateau_IS": 1.111
+  }
+ ],
+ "NQ": {
+  "n": 426,
+  "per_week": 2.72,
+  "win": 40.6,
+  "avgW": 1.42,
+  "avgL": -0.93,
+  "pf": 1.041,
+  "netR": 9.7,
+  "maxDD_R": -21.9,
+  "lose_streak": 8,
+  "pf_IS": 1.194,
+  "n_IS": 208,
+  "pf_OOS": 0.899,
+  "n_OOS": 218,
+  "avg_pts": -1.39,
+  "med_risk_pts": 105.77,
+  "med_hold_min": 269.0,
+  "by_year": {
+   "2023": {
+    "n": 37,
+    "pf": 1.86
+   },
+   "2024": {
+    "n": 135,
+    "pf": 0.9
+   },
+   "2025": {
+    "n": 151,
+    "pf": 1.19
+   },
+   "2026": {
+    "n": 103,
+    "pf": 0.8
+   }
+  },
+  "by_side": {
+   "short": {
+    "n": 136,
+    "pf": 1.02
+   },
+   "long": {
+    "n": 290,
+    "pf": 1.05
+   }
+  },
+  "pf_2x_cost": 1.01,
+  "pf_no_cost": 1.073,
+  "boot_pf_5_50_95": [
+   0.85,
+   1.04,
+   1.26
+  ],
+  "p_pf_below_1": 0.381,
+  "pf_opposite": 1.266,
+  "pf_random_dir_median": 1.199,
+  "pf_random_dir_95": 1.378,
+  "by_year_str": "2023:1.86(37) 2024:0.9(135) 2025:1.19(151) 2026:0.8(103)"
+ },
+ "NQ_controls": {
+  "bias_none_both_sides": {
+   "n": 558,
+   "pf": 1.189,
+   "n_IS": 273,
+   "pf_IS": 1.16,
+   "n_OOS": 285,
+   "pf_OOS": 1.22
+  },
+  "bias_anti_trend": {
+   "n": 411,
+   "pf": 1.363,
+   "n_IS": 202,
+   "pf_IS": 1.26,
+   "n_OOS": 209,
+   "pf_OOS": 1.47
+  },
+  "random_entry_time_same_days": {
+   "median": 1.138,
+   "p95": 1.296
+  },
+  "all_days_trend_at_W0_no_sweep_needed": {
+   "n": 774,
+   "pf": 0.957,
+   "n_IS": 386,
+   "pf_IS": 0.99,
+   "n_OOS": 388,
+   "pf_OOS": 0.93
+  },
+  "mo_reclaim_without_depth_sweep": {
+   "n": 204,
+   "pf": 0.877,
+   "n_IS": 112,
+   "pf_IS": 1.04,
+   "n_OOS": 92,
+   "pf_OOS": 0.68
+  }
+ },
+ "NQ_overlap": {
+  "TDH_proxy": {
+   "my_days": 426,
+   "other_days": 365,
+   "common_days": 222,
+   "share_of_my_days": 0.521,
+   "share_of_other_days": 0.608,
+   "same_dir_share": 1.0,
+   "corr_daily_R_all_days": 0.482,
+   "my_pf_on_common": 2.88,
+   "my_pf_off_common": 0.211,
+   "other_pf": 1.38,
+   "pf_combined_daily": 1.2
+  },
+  "ORG_proxy": {
+   "my_days": 426,
+   "other_days": 179,
+   "common_days": 132,
+   "share_of_my_days": 0.31,
+   "share_of_other_days": 0.737,
+   "same_dir_share": 0.462,
+   "corr_daily_R_all_days": 0.086,
+   "my_pf_on_common": 0.924,
+   "my_pf_off_common": 1.095,
+   "other_pf": 1.118,
+   "pf_combined_daily": 1.07
+  },
+  "AZL": {
+   "my_days": 426,
+   "other_days": 129,
+   "common_days": 71,
+   "share_of_my_days": 0.167,
+   "share_of_other_days": 0.55,
+   "same_dir_share": 1.0,
+   "corr_daily_R_all_days": 0.151,
+   "my_pf_on_common": 1.613,
+   "my_pf_off_common": 0.947,
+   "other_pf": 1.786,
+   "pf_combined_daily": 1.256
+  }
+ },
+ "NQ_partials": {
+  "long": {
+   "n_IS": 146,
+   "pf_IS": 1.18,
+   "n_OOS": 144,
+   "pf_OOS": 0.93
+  },
+  "short": {
+   "n_IS": 62,
+   "pf_IS": 1.23,
+   "n_OOS": 74,
+   "pf_OOS": 0.83
+  },
+  "entry 03:00-06:59": {
+   "n_IS": 0,
+   "pf_IS": null,
+   "n_OOS": 0,
+   "pf_OOS": null
+  },
+  "entry 07:00-08:29": {
+   "n_IS": 0,
+   "pf_IS": null,
+   "n_OOS": 0,
+   "pf_OOS": null
+  },
+  "entry 08:30-09:29": {
+   "n_IS": 131,
+   "pf_IS": 1.01,
+   "n_OOS": 151,
+   "pf_OOS": 0.97
+  },
+  "entry 09:30-10:29": {
+   "n_IS": 77,
+   "pf_IS": 1.64,
+   "n_OOS": 67,
+   "pf_OOS": 0.74
+  },
+  "sweep < 0.25 ATR": {
+   "n_IS": 117,
+   "pf_IS": 1.28,
+   "n_OOS": 122,
+   "pf_OOS": 0.95
+  },
+  "sweep 0.25-0.5 ATR": {
+   "n_IS": 68,
+   "pf_IS": 0.76,
+   "n_OOS": 71,
+   "pf_OOS": 0.79
+  },
+  "sweep >= 0.5 ATR": {
+   "n_IS": 23,
+   "pf_IS": 2.86,
+   "n_OOS": 25,
+   "pf_OOS": 0.95
+  },
+  "extreme made 00:00-02:59 (Asia)": {
+   "n_IS": 26,
+   "pf_IS": 0.81,
+   "n_OOS": 44,
+   "pf_OOS": 1.27
+  },
+  "extreme made 03:00-06:59 (London)": {
+   "n_IS": 82,
+   "pf_IS": 1.35,
+   "n_OOS": 100,
+   "pf_OOS": 0.91
+  },
+  "extreme made >= 07:00": {
+   "n_IS": 100,
+   "pf_IS": 1.18,
+   "n_OOS": 74,
+   "pf_OOS": 0.71
+  },
+  "extreme swept prev-day extreme (pdl for long / pdh for short)": {
+   "n_IS": 50,
+   "pf_IS": 1.46,
+   "n_OOS": 64,
+   "pf_OOS": 0.98
+  },
+  "extreme inside prev-day range": {
+   "n_IS": 158,
+   "pf_IS": 1.13,
+   "n_OOS": 154,
+   "pf_OOS": 0.87
+  },
+  "MO beyond pdc in trade dir": {
+   "n_IS": 105,
+   "pf_IS": 0.89,
+   "n_OOS": 116,
+   "pf_OOS": 0.95
+  },
+  "MO behind pdc": {
+   "n_IS": 103,
+   "pf_IS": 1.54,
+   "n_OOS": 102,
+   "pf_OOS": 0.84
+  },
+  "stop floor binding (<= 0.13 ATR or min pts)": {
+   "n_IS": 1,
+   "pf_IS": NaN,
+   "n_OOS": 0,
+   "pf_OOS": null
+  },
+  "Mon-Tue": {
+   "n_IS": 79,
+   "pf_IS": 1.53,
+   "n_OOS": 78,
+   "pf_OOS": 1.06
+  },
+  "Wed": {
+   "n_IS": 39,
+   "pf_IS": 1.15,
+   "n_OOS": 49,
+   "pf_OOS": 0.8
+  },
+  "Thu-Fri": {
+   "n_IS": 90,
+   "pf_IS": 0.92,
+   "n_OOS": 91,
+   "pf_OOS": 0.83
+  },
+  "stopped out share": {
+   "share": 0.52
+  }
+ },
+ "NQ_cisd_same_bar_share": 0.986,
+ "ES": {
+  "n": 414,
+  "per_week": 2.65,
+  "win": 39.9,
+  "avgW": 1.42,
+  "avgL": -0.94,
+  "pf": 1.009,
+  "netR": 2.0,
+  "maxDD_R": -36.0,
+  "lose_streak": 8,
+  "pf_IS": 1.284,
+  "n_IS": 200,
+  "pf_OOS": 0.787,
+  "n_OOS": 214,
+  "avg_pts": 1.09,
+  "med_risk_pts": 20.12,
+  "med_hold_min": 314.0,
+  "by_year": {
+   "2023": {
+    "n": 37,
+    "pf": 1.45
+   },
+   "2024": {
+    "n": 126,
+    "pf": 1.12
+   },
+   "2025": {
+    "n": 140,
+    "pf": 1.0
+   },
+   "2026": {
+    "n": 111,
+    "pf": 0.77
+   }
+  },
+  "by_side": {
+   "short": {
+    "n": 116,
+    "pf": 1.03
+   },
+   "long": {
+    "n": 298,
+    "pf": 1.0
+   }
+  },
+  "pf_2x_cost": 0.949,
+  "pf_no_cost": 1.074,
+  "boot_pf_5_50_95": [
+   0.82,
+   1.01,
+   1.23
+  ],
+  "p_pf_below_1": 0.482,
+  "pf_opposite": 1.012,
+  "pf_random_dir_median": 0.998,
+  "pf_random_dir_95": 1.137,
+  "by_year_str": "2023:1.45(37) 2024:1.12(126) 2025:1.0(140) 2026:0.77(111)"
+ },
+ "ES_controls": {
+  "bias_none_both_sides": {
+   "n": 538,
+   "pf": 0.929,
+   "n_IS": 264,
+   "pf_IS": 0.84,
+   "n_OOS": 274,
+   "pf_OOS": 1.01
+  },
+  "bias_anti_trend": {
+   "n": 393,
+   "pf": 1.051,
+   "n_IS": 182,
+   "pf_IS": 0.88,
+   "n_OOS": 211,
+   "pf_OOS": 1.22
+  },
+  "random_entry_time_same_days": {
+   "median": 1.054,
+   "p95": 1.133
+  },
+  "all_days_trend_at_W0_no_sweep_needed": {
+   "n": 773,
+   "pf": 0.931,
+   "n_IS": 386,
+   "pf_IS": 1.09,
+   "n_OOS": 387,
+   "pf_OOS": 0.77
+  },
+  "mo_reclaim_without_depth_sweep": {
+   "n": 203,
+   "pf": 0.986,
+   "n_IS": 110,
+   "pf_IS": 1.0,
+   "n_OOS": 93,
+   "pf_OOS": 0.97
+  }
+ },
+ "ES_overlap": {
+  "TDH_proxy": {
+   "my_days": 414,
+   "other_days": 383,
+   "common_days": 211,
+   "share_of_my_days": 0.51,
+   "share_of_other_days": 0.551,
+   "same_dir_share": 1.0,
+   "corr_daily_R_all_days": 0.392,
+   "my_pf_on_common": 1.929,
+   "my_pf_off_common": 0.483,
+   "other_pf": 1.033,
+   "pf_combined_daily": 1.021
+  },
+  "ORG_proxy": {
+   "my_days": 414,
+   "other_days": 164,
+   "common_days": 112,
+   "share_of_my_days": 0.271,
+   "share_of_other_days": 0.683,
+   "same_dir_share": 0.438,
+   "corr_daily_R_all_days": -0.007,
+   "my_pf_on_common": 1.038,
+   "my_pf_off_common": 0.998,
+   "other_pf": 1.712,
+   "pf_combined_daily": 1.228
+  },
+  "AZL": {
+   "my_days": 414,
+   "other_days": 120,
+   "common_days": 71,
+   "share_of_my_days": 0.171,
+   "share_of_other_days": 0.592,
+   "same_dir_share": 1.0,
+   "corr_daily_R_all_days": 0.185,
+   "my_pf_on_common": 1.256,
+   "my_pf_off_common": 0.96,
+   "other_pf": 1.78,
+   "pf_combined_daily": 1.211
+  }
+ },
+ "ES_partials": {
+  "long": {
+   "n_IS": 150,
+   "pf_IS": 1.13,
+   "n_OOS": 148,
+   "pf_OOS": 0.89
+  },
+  "short": {
+   "n_IS": 50,
+   "pf_IS": 1.74,
+   "n_OOS": 66,
+   "pf_OOS": 0.57
+  },
+  "entry 03:00-06:59": {
+   "n_IS": 0,
+   "pf_IS": null,
+   "n_OOS": 0,
+   "pf_OOS": null
+  },
+  "entry 07:00-08:29": {
+   "n_IS": 0,
+   "pf_IS": null,
+   "n_OOS": 0,
+   "pf_OOS": null
+  },
+  "entry 08:30-09:29": {
+   "n_IS": 142,
+   "pf_IS": 1.16,
+   "n_OOS": 160,
+   "pf_OOS": 0.74
+  },
+  "entry 09:30-10:29": {
+   "n_IS": 58,
+   "pf_IS": 1.65,
+   "n_OOS": 54,
+   "pf_OOS": 0.94
+  },
+  "sweep < 0.25 ATR": {
+   "n_IS": 117,
+   "pf_IS": 1.23,
+   "n_OOS": 121,
+   "pf_OOS": 0.75
+  },
+  "sweep 0.25-0.5 ATR": {
+   "n_IS": 63,
+   "pf_IS": 1.06,
+   "n_OOS": 71,
+   "pf_OOS": 0.86
+  },
+  "sweep >= 0.5 ATR": {
+   "n_IS": 20,
+   "pf_IS": 2.94,
+   "n_OOS": 22,
+   "pf_OOS": 0.84
+  },
+  "extreme made 00:00-02:59 (Asia)": {
+   "n_IS": 32,
+   "pf_IS": 0.58,
+   "n_OOS": 45,
+   "pf_OOS": 1.27
+  },
+  "extreme made 03:00-06:59 (London)": {
+   "n_IS": 87,
+   "pf_IS": 1.77,
+   "n_OOS": 102,
+   "pf_OOS": 0.73
+  },
+  "extreme made >= 07:00": {
+   "n_IS": 81,
+   "pf_IS": 1.2,
+   "n_OOS": 67,
+   "pf_OOS": 0.65
+  },
+  "extreme swept prev-day extreme (pdl for long / pdh for short)": {
+   "n_IS": 45,
+   "pf_IS": 1.57,
+   "n_OOS": 62,
+   "pf_OOS": 1.08
+  },
+  "extreme inside prev-day range": {
+   "n_IS": 155,
+   "pf_IS": 1.2,
+   "n_OOS": 152,
+   "pf_OOS": 0.69
+  },
+  "MO beyond pdc in trade dir": {
+   "n_IS": 106,
+   "pf_IS": 1.06,
+   "n_OOS": 115,
+   "pf_OOS": 0.73
+  },
+  "MO behind pdc": {
+   "n_IS": 94,
+   "pf_IS": 1.58,
+   "n_OOS": 99,
+   "pf_OOS": 0.87
+  },
+  "stop floor binding (<= 0.13 ATR or min pts)": {
+   "n_IS": 2,
+   "pf_IS": 0.86,
+   "n_OOS": 1,
+   "pf_OOS": 0.0
+  },
+  "Mon-Tue": {
+   "n_IS": 74,
+   "pf_IS": 1.63,
+   "n_OOS": 80,
+   "pf_OOS": 0.77
+  },
+  "Wed": {
+   "n_IS": 35,
+   "pf_IS": 0.95,
+   "n_OOS": 46,
+   "pf_OOS": 0.7
+  },
+  "Thu-Fri": {
+   "n_IS": 91,
+   "pf_IS": 1.2,
+   "n_OOS": 88,
+   "pf_OOS": 0.87
+  },
+  "stopped out share": {
+   "share": 0.52
+  }
+ },
+ "ES_cisd_same_bar_share": 0.988,
+ "verdict": "FAIL",
+ "notes": "CISD trigger fires on the same bar as PLAIN in ~99% of days (the open of the last down/up-close bar into the extreme is almost always behind MO), so the grid has ~12 distinct variants. NQ: same trades in a random direction (median PF ~1.20) or the opposite direction (1.27) beat the trend-direction rule (1.04); the IS gain came from days that later became TDH trend days."
+}
