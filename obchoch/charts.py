@@ -45,8 +45,8 @@ def plot_trade(pdf, a, tr, mk, title_extra=''):
     xe, xx, xt, xch = tr.entry_k - j0, tr.exit_k - j0, tr.touch_k - j0, tr.choch_k - j0
     ax2.hlines(tr.entry, xe, xx, color='k', lw=1, label=f'entry {tr.entry:.1f}')
     ax2.hlines(tr.stop, xe, xx, color=DN, lw=1.2, ls='--', label=f'stop {tr.stop:.1f}')
-    ax2.hlines(tr.target, xe, xx, color=UP, lw=1.2, ls='--', label=f'target {tr.target:.1f} ({tr.rr:.0f}R)')
-    lvl = a['sh3' if tr.side == 1 else 'sl3'][tr.choch_k]
+    if not np.isnan(tr.target):
+        ax2.hlines(tr.target, xe, xx, color=UP, lw=1.2, ls='--', label=f'target {tr.target:.1f} ({tr.rr:.0f}R)')
     ax2.annotate('touch', (xt, m.low[xt] if tr.side == 1 else m.high[xt]), xytext=(0, -22 if tr.side == 1 else 22), textcoords='offset points', ha='center', fontsize=8, arrowprops=dict(arrowstyle='->'))
     ax2.annotate('CHOCH close', (xch, m.close[xch]), xytext=(-30, 28 if tr.side == 1 else -28), textcoords='offset points', fontsize=8, arrowprops=dict(arrowstyle='->', color='purple'), color='purple')
     ax2.scatter([xe], [tr.entry], marker='^' if tr.side == 1 else 'v', s=90, color='k', zorder=5)

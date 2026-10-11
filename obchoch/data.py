@@ -34,3 +34,12 @@ def daily_context(d):
     sma = day.cl.rolling(20).mean()
     ctx['trend_d'] = np.sign(day.cl - sma).shift(1)  # +1 up, -1 down (prev 16:00 close vs its 20-day SMA)
     return ctx
+
+
+def resample_daily(d):
+    """Futures-style daily bars 18:00-17:00 NY, labelled by start; 'end' = 18:00 next day (bar complete by 17:00)."""
+    g = d.set_index('t').resample('24h', offset='18h', label='left', closed='left')
+    b = g.agg(open=('open', 'first'), high=('high', 'max'), low=('low', 'min'),
+              close=('close', 'last')).dropna().reset_index()
+    b['end'] = b['t'] + pd.Timedelta(days=1)
+    return b

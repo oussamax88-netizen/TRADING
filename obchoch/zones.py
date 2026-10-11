@@ -15,6 +15,7 @@ MAX_BACK = 15  # how far back from the breaking bar we search for the OB candle
 def find_zones(b, tf_label):
     o, h, l, c = (b[x].to_numpy() for x in ('open', 'high', 'low', 'close'))
     n = len(b)
+    avg = pd.Series(h - l).shift(1).rolling(20).mean().to_numpy()   # mean range of the 20 bars before
     out = []
     sh = sl = None          # (index, level) of the latest confirmed swing high / low, not yet broken
     for i in range(n):
@@ -22,13 +23,15 @@ def find_zones(b, tf_label):
         if sh is not None and c[i] > sh[1]:
             for j in range(i - 1, max(sh[0], i - MAX_BACK) - 1, -1):
                 if c[j] < o[j]:
-                    out.append((b.t.iat[j], b.end.iat[i], 1, l[j], h[j], tf_label, sh[1]))
+                    fvg = any(l[m + 1] > h[m - 1] for m in range(j + 1, i))
+                    out.append((b.t.iat[j], b.end.iat[i], 1, l[j], h[j], tf_label, sh[1], (c[i] - l[j]) / avg[i], fvg))
                     break
             sh = None
         if sl is not None and c[i] < sl[1]:
             for j in range(i - 1, max(sl[0], i - MAX_BACK) - 1, -1):
                 if c[j] > o[j]:
-                    out.append((b.t.iat[j], b.end.iat[i], -1, l[j], h[j], tf_label, sl[1]))
+                    fvg = any(h[m + 1] < l[m - 1] for m in range(j + 1, i))
+                    out.append((b.t.iat[j], b.end.iat[i], -1, l[j], h[j], tf_label, sl[1], (h[j] - c[i]) / avg[i], fvg))
                     break
             sl = None
         # 2) swing point at p = i-K is confirmed once bar i has closed
@@ -38,5 +41,5 @@ def find_zones(b, tf_label):
                 sh = (p, h[p])
             if l[p] < l[p - K:p].min() and l[p] <= l[p + 1:i + 1].min():
                 sl = (p, l[p])
-    z = pd.DataFrame(out, columns=['ob_t', 'created', 'dir', 'zlo', 'zhi', 'tf', 'broken_level'])
+    z = pd.DataFrame(out, columns=['ob_t', 'created', 'dir', 'zlo', 'zhi', 'tf', 'broken_level', 'disp', 'fvg'])
     return z
